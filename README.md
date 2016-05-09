@@ -1,8 +1,6 @@
 # minimist-json
 
-Whatever args you pass in are streamed out as JSON. That's it.
-
-It's a literal pass-through for [minimist](https://www.npmjs.com/package/minimist).
+You pass in args, and it comes out as JSON. That's it.
 
 For example:
 
@@ -30,14 +28,35 @@ Than you don't need the global install, just the normal one:
 
 	npm install --save minimist-json
 
-## api
+## how to use
 
-You'll notice that the [bin.js](./bin.js) is quite small.
+This uses [minimist](https://www.npmjs.com/package/minimist) to
+parse inputs, but with this difference:
 
-All that it does is pass `process.argv` over to minimist and
-pipes the `JSON.stringify` output back to `stdout`.
+	minimist-json [[transform options] --] [input args]
 
-In other words, look at minimist for how to use it.
+### transform options
+
+For example, you might want to use the input arg `--thing=[1,2]`
+and have it be output as `{"thing":[1,2]}` but you'll notice that
+what actually comes out is `{"thing":"[1,2]"}`.
+
+This is because the input args are treated as strings. But with
+the transform you can do this:
+
+	minimist-json --json=thing -- --thing=[1,2]
+
+And the output will be `{ "thing": [ 1, 2 ] }`
+
+#### `--json`
+
+Use `.` notation for property reference, aka `{ a: { b: [3] } }`
+would be `--json=a.b`
+
+### input args
+
+The arg parsing is passed through [minimist](https://www.npmjs.com/package/minimist),
+so look there for how to write args correctly.
 
 ## license
 
