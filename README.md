@@ -32,7 +32,7 @@ Than you don't need the global install, just the normal one:
 
 ## api
 
-You'll notice that the [index.js](./index.js) is quite small.
+You'll notice that the [bin.js](./bin.js) is quite small.
 
 All that it does is pass `process.argv` over to minimist and
 pipes the `JSON.stringify` output back to `stdout`.
@@ -44,4 +44,3 @@ In other words, look at minimist for how to use it.
 Published under the [Very Open License](http://veryopenlicense.com/).
 
 <3
-
