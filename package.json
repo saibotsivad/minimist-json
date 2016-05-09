@@ -1,0 +1,32 @@
+{
+  "name": "minimist-json",
+  "version": "1.0.0",
+  "description": "Whatever args you pass in are streamed out as JSON. That's it.",
+  "bin": {
+    "minimist-json": "./bin.js"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiaslabs/minimist-json.git"
+  },
+  "keywords": [
+    "minimist",
+    "cli",
+    "json"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/tobiaslabs/minimist-json/issues"
+  },
+  "homepage": "https://github.com/tobiaslabs/minimist-json#readme",
+  "dependencies": {
+    "minimist": "1.2.0"
+  },
+  "devDependencies": {
+    "tape": "4.5.1"
+  }
+}
