@@ -1,5 +1,7 @@
 # minimist-json
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/saibotsivad/minimist-json.svg)](https://greenkeeper.io/)
+
 You pass in args, and it comes out as JSON. That's it.
 
 For example:
