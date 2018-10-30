@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/saibotsivad/minimist-json#readme",
   "dependencies": {
+    "dlv": "^1.1.2",
+    "dset": "^2.0.1",
     "minimist": "1.2.0"
   },
   "devDependencies": {
