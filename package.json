@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/saibotsivad/minimist-json#readme",
   "dependencies": {
-    "minimist": "1.2.0"
+    "minimist": "1.2.3"
   },
   "devDependencies": {
     "tape": "4.5.1"
