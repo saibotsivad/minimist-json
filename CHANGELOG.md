@@ -18,7 +18,7 @@ Change categories are:
 
 *Add changes here.*
 
-## [3.0.0] - 2021-04-23
+## [3.0.0](https://github.com/saibotsivad/minimist-json/compare/v2.0.2...v3.0.0) - 2021-04-23
 
 This release does not introduce any other changes, so as long as you are using NodeJS
 version 10 and above, the upgrade path is simply to update your installed version.
