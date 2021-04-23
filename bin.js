@@ -2,7 +2,7 @@
 
 const minimist = require('minimist')
 const find = require('dlv')
-const set = require('dset')
+const { dset } = require('dset')
 
 const splitter = process.argv.slice(2).indexOf('--')
 
@@ -17,7 +17,7 @@ if (beforeArgv && beforeArgv.json) {
 	toJsonParse.forEach(propertyName => {
 		var reference = find(afterArgv, propertyName)
 		if (reference) {
-			set(afterArgv, propertyName, JSON.parse(reference))
+			dset(afterArgv, propertyName, JSON.parse(reference))
 		}
 	})
 }
