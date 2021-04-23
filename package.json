@@ -26,7 +26,7 @@
   "dependencies": {
     "dlv": "^1.1.2",
     "dset": "^2.0.1",
-    "minimist": "1.2.0"
+    "minimist": "1.2.3"
   },
   "devDependencies": {
     "tape": "4.5.1"
