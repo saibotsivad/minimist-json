@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const minimist = require('minimist')
+const find = require('dlv')
+const set = require('dset')
 
 const splitter = process.argv.slice(2).indexOf('--')
 
@@ -21,27 +23,3 @@ if (beforeArgv && beforeArgv.json) {
 }
 
 process.stdout.write(JSON.stringify(afterArgv))
-
-function find(obj, ref) {
-	if (typeof ref === 'string') {
-		return find(obj, ref.split('.'))
-	} else if (!obj) {
-		return undefined
-	} else if (ref.length === 0) {
-		return obj
-	} else {
-		return find(obj[ref[0]], ref.slice(1))
-	}
-}
-
-function set(obj, ref, value) {
-	if (typeof ref === 'string') {
-		return set(obj, ref.split('.'), value)
-	} else if (ref.length === 1 && value) {
-		return obj[ref[0]] = value
-	} else if (ref.length === 0) {
-		return obj
-	} else {
-		return set(obj[ref[0]], ref.slice(1), value)
-	}
-}
