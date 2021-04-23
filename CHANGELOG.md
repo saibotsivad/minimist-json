@@ -14,7 +14,19 @@ Change categories are:
 * `Fixed` for any bug fixes.
 * `Security` to invite users to upgrade in case of vulnerabilities.
 
-## [2.0.2] - 2020-09-23
+## [Unreleased](https://github.com/saibotsivad/minimist-json/compare/v2.0.2...HEAD)
+
+*Add changes here.*
+
+## [3.0.0] - 2021-04-23
+
+This release does not introduce any other changes, so as long as you are using NodeJS
+version 10 and above, the upgrade path is simply to update your installed version.
+
+### Changed/Removed
+- Dropped support for NodeJS versions that are [past EOL](https://endoflife.software/programming-languages/server-side-scripting/nodejs).
+
+## [2.0.2](https://github.com/saibotsivad/minimist-json/compare/v2.0.0...v2.0.2) - 2021-04-22
 
 ### Added
 - This changelog!
@@ -24,6 +36,3 @@ Change categories are:
 
 ### Security
 - Updated the version of `minimist` (old version had CVE issue). Thanks @TheBrockEllis 🎉
-
-[Unreleased]: https://github.com/saibotsivad/minimist-json/compare/v2.0.2...HEAD
-[2.0.2]: https://github.com/saibotsivad/minimist-json/compare/v2.0.0...v2.0.2
