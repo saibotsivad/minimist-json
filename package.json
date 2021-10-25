@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "description": "Whatever args you pass in are streamed out as JSON. That is all.",
   "bin": {
-    "minimist-json": "./bin.js"
+    "minimist-json": "./bin.js",
+    "mjson": "./bin.js"
   },
   "scripts": {
     "test": "tape test.js"
