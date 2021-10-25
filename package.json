@@ -7,7 +7,7 @@
     "mjson": "./bin.js"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
     "minimist": "^1.2.5"
   },
   "devDependencies": {
-    "tape": "^5.2.2"
+    "uvu": "^0.5.2"
   }
 }
