@@ -1,6 +1,6 @@
 {
   "name": "minimist-json",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Whatever args you pass in are streamed out as JSON. That is all.",
   "bin": {
     "minimist-json": "./bin.js",
