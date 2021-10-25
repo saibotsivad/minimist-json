@@ -3,10 +3,11 @@
   "version": "3.0.0",
   "description": "Whatever args you pass in are streamed out as JSON. That is all.",
   "bin": {
-    "minimist-json": "./bin.js"
+    "minimist-json": "./bin.js",
+    "mjson": "./bin.js"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,12 @@
     "cli",
     "json"
   ],
-  "author": "saibotsivad",
-  "license": "VOL",
+  "author": {
+    "name": "Tobias Davis",
+    "email": "tobias@davistobias.com",
+    "url": "https://davistobias.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/saibotsivad/minimist-json/issues"
   },
@@ -29,6 +34,6 @@
     "minimist": "^1.2.5"
   },
   "devDependencies": {
-    "tape": "^5.2.2"
+    "uvu": "^0.5.2"
   }
 }

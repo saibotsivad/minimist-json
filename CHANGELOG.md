@@ -18,6 +18,10 @@ Change categories are:
 
 *Add changes here.*
 
+## [3.1.0](https://github.com/saibotsivad/minimist-json/compare/v3.0.0...v3.1.0) - 2021-10-25
+### Added
+- Added `mjson` as an additional CLI command, aka a shortcut to `minimist-json`.
+
 ## [3.0.0](https://github.com/saibotsivad/minimist-json/compare/v2.0.2...v3.0.0) - 2021-04-23
 
 This release does not introduce any other changes, so as long as you are using NodeJS
